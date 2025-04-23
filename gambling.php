@@ -13,9 +13,9 @@ session_start();
 	</div>	
 	<div class="vnos">
 		<form action="igraj.php" method="post">
-		Ime prvega igralca: <input type="text" name="ime1"><br>
-		Ime drugega igralca: <input type="text" name="ime2"><br>
-		Ime tretjega igralca: <input type="text" name="ime3"><br>
+		Ime prvega igralca: <input type="text" name="tek1"><br>
+		Ime drugega igralca: <input type="text" name="tek2"><br>
+		Ime tretjega igralca: <input type="text" name="tek3"><br>
 		<input type="submit">
 		</form>
 	</div>
@@ -23,6 +23,9 @@ session_start();
 </html>
 
 <?php
-$_SESSION["ime3"] = "ime3";
-$_SESSION["favanimal"] = "cat";
+$_SESSION["tek1"] = $_POST['tek1'];
+$_SESSION["tek2"] = $_POST['tek2'];
+$_SESSION["tek3"] = $_POST['tek3'];
+
+echo $_SESSION["ime1"];
 ?>
